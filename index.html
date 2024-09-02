@@ -1,132 +1,206 @@
 <!DOCTYPE html>
-<html>
-	<head>
-			<title> MY WEBSITE </title>
-			<link rel="stylesheet" href="style.css">
-			<style>
-			/* @media only screen and (max-width:600px){
+<html lang="en">
 
-    .cnt{
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/f9f5c2ad09.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!-- <img src="images/logo" alt="logo" class="logo" > -->
+                <h1 class="logo-name">Sujin</h1>
+                <ul id="side-menu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="menu-icon fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="menu-icon fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>MERN Stack Developer</p>
+                <h1>Hi, I'm <span> Sujin</span> <br> From Wayanad</h1>
+            </div>
+        </div>
+    </div>
+    <!-- About section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/img2.png" alt="image2">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>As a computer application graduate, my journey into the world of blockchain technology has been
+                        both unexpected and incredibly rewarding. After graduating, I attempted to pursue postgraduate
+                        studies but couldn't complete them. This led me to explore other avenues, and during a diploma
+                        course, I discovered the Certified Blockchain Architect course at Kerala Digital University. I
+                        am now enrolled in the Certified Blockchain Architect Course at Kerala Blockchain Academy.
+                        Although I had heard about blockchain before, my knowledge was limited. However, the supportive
+                        environment at KBA, along with the encouragement from the dedicated staff, has been instrumental
+                        in my learning journey. Their guidance has ignited my passion for blockchain technology, and I
+                        am eager to continue working and growing in this exciting field.Kerala Digital University.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opnetab('skills')">Skills</p>
+                       
+                        <p class="tab-links" onclick="opnetab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+
+                        <ul>
+                            <li>Programming Languages</li>
+                            <li>Adaptability</li>
+                            <li>Time Management</li>
+                            <li>Critical Thinking</li>
+                            <li>Team Work</li>
+
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2024 -Current</span><br>Blockchain Architect Student</li>
+                            <li><span>2018-2021</span><br>Bachelor of Computer Applications</li>
+                            <li><span>Till-2018</span><br>Secondary education</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Works</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/img3.webp" alt="workimg">
+                    <div class="layer">
+                        <h3>Liver Cancer Detection Using Image Processing</h3>
+                        <p>It's my undergraduate project for finding the cancer-affected parts of a liver by uploading a
+                            scanned image of a liver. </p>
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/img4.png" alt="workimg">
+                    <div class="layer">
+                        <h3>KBA Courses</h3>
+                        <p>It's a simple website of Kerala Blockchain Academy designed using CSS.</p>
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/img5.png" alt="workimg">
+                    <div class="layer">
+                        <h3>EntryLaunch</h3>
+                        <p>Entrylaunch is a specialized job board platform designed to connect freshers with employers,
+                            featuring distinct roles for admin, employer, and employee, with secure login and management
+                            functionalities.</p>
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>sujinbabups@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>6238301853</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/p.s_sujin/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/sujin-babu-p-s-341457205/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/sujinbabups"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="images/cv" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form id="contactForm">
+                        <input type="text" name="c_name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your email" required>
+                        <textarea name="message" rows="6" placeholder="Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="copyright">
+            <p>Copyright <i class="fa-regular fa-copyright"></i> Sujin with <i class="fa-solid fa-heart"></i> </p>
+        </div> -->
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName('tab-links');
+        var tabcontets = document.getElementsByClassName('tab-contents');
+
+        function opnetab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove('active-link')
+            }
+            for (tabcontet of tabcontets) {
+                tabcontet.classList.remove('active-tab')
+            }
+            event.currentTarget.classList.add('active-link');
+            document.getElementById(tabname).classList.add('active-tab')
+        }
+
+
+    </script>
+    <script>
+        var sidemenu = document.getElementById("side-menu");
+        function openmenu() {
+            sidemenu.style.right = '0'
+        }
+        function closemenu() {
+            sidemenu.style.right = '-200px';
+        }
+    </script>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', async function(event) {
+            event.preventDefault(); // Prevent default form submission
         
-        padding: 10px;
-		font-size: 18px;
-		width: 100%;
-    }
-   
-    img{
-        width: 80px;
-        height: 120px;
-        padding-right: 10px;
-    }
-	p{
-		font-size: 15px;
-	}
-	.container{
-		width: 100%;
-		font-size: 13px;
-		padding: 5px;
-	}
-	
- 
-  
-}
-*/
-			</style> 
-	</head>
-	<body>
-	
-		<div class="navbar">
-		<nav>
-			<ul style="margin-top:-2px;">
-				<li><a class="nv" href="#home">Home</a></li>
-				<li><a class="nv" href="#edu">Education</a></li>
-				<li><a class="nv" href="#sk">Skills</a></li>
-				<li><a class="nv" href="#pro">Projects</a></li>
-				<li><a class="nv" href="#cont">Contact</a></li>
-		</ul>
-		</nav>
-	</div>
-	
-	<h2 class="nm"> Hello I'am SUJIN</h2>
-	
-		<div class="cnt" id="home">
-			<img src="IMG_0577__1_-removebg-preview.png">
-			<p style="font-family: 'Times New Roman', Times, serif;text-align: justify;padding-top: 40px;"> I am A Graduate in Computer Applications.Currently doing Postgraduate Diploma in Blockchain Development at<a href="https://duk.ac.in/ " class="link"> Kerala Digital University</a></p><br><br>
-			<p style="font-family: 'Times New Roman', Times, serif;text-align: justify;">Expecting a bright future in Web-Development and Blockchain Technology.</p>
-			
-			
-		</div>
-	
-	<div class="container" >
-		<div class="edu" id="edu">
-			<table>
-				<tr>
-				<th>Year</th>
-				<th>Course</th>
-				<th>Board/University</th>
-				<th>Mark/Percentage</th>
-				</tr>
-				<tr>
-				<td>2022-2023</td>
-				<td>PGDCA</td>
-				<td>Kerala Rutronics</td>
-				<td>0</td>
-				</tr>
-				<tr>
-				<td>2018-2021</td>
-				<td>BCA</td>
-				<td>University Of Calicut</td>
-				<td>0</td>
-				</tr>
-				<tr>
-				<td>2016-2018</td>
-				<td>Pus two</td>
-				<td>DHSE Kerala</td>
-				<td>0</td>
-				</tr>
-				<tr>
-				<td>2015-2016</td>
-				<td>SSLC</td>
-				<td>Kerala Board of Public Education</td>
-				<td>0</td>
-				</tr>
-				</table>
+            // Get form data
+            const formData = new FormData(this);
+            const formObject = {};
+            formData.forEach((value, key) => {
+                formObject[key] = value;
+            });
+        
+            try {
+                const response = await fetch('/submit-form', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(formObject)
+                });
+        
+                if (response.ok) {
+                    alert('Message saved successfully');
+                } else {
+                    alert('Error saving message');
+                }
+            } catch (error) {
+                alert('An error occurred: ' + error.message);
+            }
+        });
+        </script>
 
-		</div>
-		<div class="skill" id="sk">
-			<h3>My Skills</h3>
-			<ul class="sk" type="square" >
-				<li>Programming Languages</li><br>
-				<li>Adaptability</li><br>
-				<li>Time Management</li><br>
-				<li>Critical Thinking</li><br>
-				<li>Team Work</li><br>
-				<li>Trouble Shoot</li><br>
+</body>
 
-			</ul>
-		</div>
-	
-		
-		
-		<div class="pro" id="pro">
-			<h2>Projects</h2>
-			<p class="pp">-Liver Cancer Ditection Using Image Processing</p>
-
-		</div>
-		<div class="cont" id="cont">
-			<h3 class="cn">Contact</h3>
-				<p class="pcn">
-				sujinbabu85@gmail.com <br>
-				6238381853 <br>
-				Technocity Campus <br>
-				Mangalapuram, Tonnakkal PO <br>
-				Thriruvanathapuram <br>
-				kerala
-				</p>
-	</div>
-
-
-	</div>
-	</body>
 </html>
-

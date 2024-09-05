@@ -24,10 +24,19 @@
                 </ul>
                 <i class="menu-icon fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
+
+            <div style="float: right;position: relative;top: 130px;">
+                <video src="images/Blockchain.mp4" loop autoplay muted width="800" height="550">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
             <div class="header-text">
                 <p>MERN Stack Developer</p>
                 <h1>Hi, I'm <span> Sujin</span> <br> From Wayanad</h1>
             </div>
+
+
         </div>
     </div>
     <!-- About section -->
@@ -50,21 +59,23 @@
                         am eager to continue working and growing in this exciting field.Kerala Digital University.</p>
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opnetab('skills')">Skills</p>
-                       
+
                         <p class="tab-links" onclick="opnetab('education')">Education</p>
                     </div>
                     <div class="tab-contents active-tab" id="skills">
 
                         <ul>
-                            <li>Programming Languages</li>
-                            <li>Adaptability</li>
-                            <li>Time Management</li>
-                            <li>Critical Thinking</li>
-                            <li>Team Work</li>
+                            <li>HTML</li>
+                            <li>Tailwind CSS</li>
+                            <li>MERN Stack</li>
+                            <li>Docker</li>
+                            <li>Solidity</li>
+                            <li>Github</li>
+                           
 
                         </ul>
                     </div>
-                    
+
                     <div class="tab-contents" id="education">
                         <ul>
                             <li><span>2024 -Current</span><br>Blockchain Architect Student</li>
@@ -83,12 +94,21 @@
             <h1 class="sub-title">My Works</h1>
             <div class="work-list">
                 <div class="work">
-                    <img src="images/img3.webp" alt="workimg">
+                    <img src="images/img5.png" alt="workimg">
                     <div class="layer">
-                        <h3>Liver Cancer Detection Using Image Processing</h3>
-                        <p>It's my undergraduate project for finding the cancer-affected parts of a liver by uploading a
-                            scanned image of a liver. </p>
-                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <h3>EntryLaunch</h3>
+                        <p>Entrylaunch is a specialized job board platform designed to connect freshers with employers,
+                            featuring distinct roles for admin, employer, and employee, with secure login and management
+                            functionalities.</p>
+                        <a href="images/img5.png"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/certi.png" alt="workimg">
+                    <div class="layer">
+                        <h3>Certificate Application</h3>
+                        <p> A decentralized application (DApp) that allows users to issue and verify certificates using blockchain technology. This application is built with React, Solidity, and Ethereum blockchain via Infura.</p>
+                        <a href="images/certi.png"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div class="work">
@@ -96,19 +116,10 @@
                     <div class="layer">
                         <h3>KBA Courses</h3>
                         <p>It's a simple website of Kerala Blockchain Academy designed using CSS.</p>
-                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="images/img4.png"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
-                <div class="work">
-                    <img src="images/img5.png" alt="workimg">
-                    <div class="layer">
-                        <h3>EntryLaunch</h3>
-                        <p>Entrylaunch is a specialized job board platform designed to connect freshers with employers,
-                            featuring distinct roles for admin, employer, and employee, with secure login and management
-                            functionalities.</p>
-                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
+                
 
             </div>
             <a href="#" class="btn">See More</a>
@@ -125,10 +136,11 @@
                     <p><i class="fa-solid fa-phone"></i>6238301853</p>
                     <div class="social-icons">
                         <a href="https://www.instagram.com/p.s_sujin/"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/in/sujin-babu-p-s-341457205/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.linkedin.com/in/sujin-babu-p-s-341457205/"><i
+                                class="fa-brands fa-linkedin"></i></a>
                         <a href="https://github.com/sujinbabups"><i class="fa-brands fa-github"></i></a>
                     </div>
-                    <a href="documents/SUJIN_CV.pdf" download class="btn btn2">Download CV</a>
+                    <a href="images/cv" download class="btn btn2">Download CV</a>
                 </div>
                 <div class="contact-right">
                     <form id="contactForm">
@@ -171,16 +183,16 @@
         }
     </script>
     <script>
-        document.getElementById('contactForm').addEventListener('submit', async function(event) {
+        document.getElementById('contactForm').addEventListener('submit', async function (event) {
             event.preventDefault(); // Prevent default form submission
-        
+
             // Get form data
             const formData = new FormData(this);
             const formObject = {};
             formData.forEach((value, key) => {
                 formObject[key] = value;
             });
-        
+
             try {
                 const response = await fetch('/submit-form', {
                     method: 'POST',
@@ -189,7 +201,7 @@
                     },
                     body: JSON.stringify(formObject)
                 });
-        
+
                 if (response.ok) {
                     alert('Message saved successfully');
                 } else {
@@ -199,7 +211,7 @@
                 alert('An error occurred: ' + error.message);
             }
         });
-        </script>
+    </script>
 
 </body>
 

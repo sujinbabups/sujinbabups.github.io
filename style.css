@@ -102,6 +102,7 @@ nav ul li a:hover::after{
 .sub-title{
     font-size: 60px;
     color: whitesmoke;
+    margin-left: 5%;
 }
 .tab-titles{
     display: flex;
@@ -160,6 +161,7 @@ nav ul li a:hover::after{
     overflow: hidden;
     width: 80%;
     height: 300px;
+    margin-left: 10%;
 }
 .work img{
     width: 100%;
@@ -230,6 +232,8 @@ nav ul li a:hover::after{
     background-color: #e24375;
     color: white;
 }
+
+
 
 /* Contact */
 .contact-left{

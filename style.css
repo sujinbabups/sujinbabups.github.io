@@ -335,7 +335,7 @@ nav .menu-icon{
         font-size: 25px;
     }
     nav ul{
-        background:#ff004f;
+        background:#ff9100;
         position: fixed;
         top: 0;
         right: -200px;
@@ -346,6 +346,7 @@ nav .menu-icon{
         transition: right 0.5s;
 
     }
+
     nav ul li{
         display: block;
         margin: 25px;
@@ -377,6 +378,36 @@ nav .menu-icon{
     }
     .copyright{
         font-size: 14px;
+    }
+
+    .img-home {
+        float: none; /* Remove float */
+        position: static; /* Remove top positioning */
+        margin-top: 20px; /* Add spacing between text and video */
+        text-align: center; /* Center the video */
+    }
+
+    .img-home video {
+        width: 100%; 
+        height: auto; 
+    }
+
+    .header-text {
+        text-align: left;
+        margin-top: 500px;
+    }
+
+}
+@media only screen and (max-width :800px){
+    .img-home {
+        float: none; 
+        top: 0; 
+        text-align: center; 
+    }
+
+    .img-home video {
+        width: 80%; 
+        height: auto; 
     }
 
 }

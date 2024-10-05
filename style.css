@@ -335,7 +335,7 @@ nav .menu-icon{
         font-size: 25px;
     }
     nav ul{
-        background:#ff9100;
+        background:orange;
         position: fixed;
         top: 0;
         right: -200px;

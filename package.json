@@ -5,9 +5,10 @@
   "type": "module",
   "homepage": "https://sujinbabups.github.io",
   "scripts": {
-    "start": "vite",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist -r https://github.com/sujinbabups/sujinbabups.github.io.git",
     "build": "vite build",
-    "deploy": "gh-pages -d dist"
+    "dev": "vite"
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",

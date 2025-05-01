@@ -1,0 +1,53 @@
+[
+  {
+    "id": 1,
+    "title": "SeedStore",
+    "image": "https://i.ibb.co/GQZxQTKC/seedstore.png",
+    "description": "Seedstore is a modern application designed to streamline the process of managing and distributing seeds for agriculture and gardening. With Seedstore, users can browse, purchase, and manage a variety of seeds while ensuring a smooth and efficient user experience.",
+    "technologies": ["React", "Node.js", "MongoDB","IOTA","Supply Chain"],
+    "linkUrl": "https://iota-seven.vercel.app/                                                  `       "
+  },
+  {
+    "id": 2,
+    "title": "Token Swapp",
+    "image": "https://i.ibb.co/XxcYtX4Z/token-swap-new.png",
+    "description": "Entrylaunch is a specialized job board platform designed to connect freshers with employers, featuring distinct roles for admin, employer, and employee, with secure login and management functionalities.",
+    "technologies": ["React", "Ethereum", "Hardhat"],
+    "linkUrl": "https://swap-token-erc-20.vercel.app/"
+  },
+  {
+    "id": 3,
+    "title": "Pharma Chain",
+    "image": "https://i.ibb.co/mVmCjQRC/pharamachain.png",
+    "description": "A blockchain-based pharmaceutical supply chain project that uses Hyperledger Fabric to ensure secure, transparent drug tracking across manufacturers, wholesalers, pharmacies, and regulators, enhancing trust and safety throughout the supply chain.",
+    "technologies": ["Hyperledger", "Tailwind CSS", "Node.js"],
+    "linkUrl": ""
+  },
+
+    {
+      "id": 4,
+      "title": "Course Hub",
+      "image": "https://i.ibb.co/Q3bbXq9q/course-List.png",
+      "description": "Course Hub is a MERN stack project with features to manage courses (add, view, delete, update) and role-based access control, granting admins full access and regular users view-only permissions.",
+      "technologies": ["HTML", "CSS"],
+      "linkUrl": "images/img4.png"
+    },
+    {
+      "id": 5,
+      "title": "Certificate Application",
+      "image": "https://i.ibb.co/Hfjcs26C/certi.png",
+      "description": "A decentralized application (DApp) that allows users to issue and verify certificates using blockchain technology. This application is built with React, Solidity, and Ethereum blockchain via Infura.",
+      "technologies": ["React", "Solidity", "Ethereum", "Infura"],
+      "linkUrl": "https://certi-app-react1.vercel.app/"
+    },
+
+    {
+      "id": 6,
+      "title": " EntryLaunch",
+      "image": "https://i.ibb.co/8L5WbQyf/entrylaunch.png",
+      "description": "Entrylaunch is a specialized job board platform designed to connect freshers with employers, featuring distinct roles for admin, employer, and employee, with secure login and management functionalities.",
+      "technologies": ["MERN Stack", "Tailwind CSS","Javascript"],
+      "linkUrl": "https://entry-launch-react-1cwo.vercel.app/"
+    }
+  
+  ]

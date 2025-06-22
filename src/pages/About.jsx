@@ -4,7 +4,7 @@ import pic from '../assets/imgeditted.jpg';
 const About = () => {
   const [activeTab, setActiveTab] = useState('skills');
 
-  const openTab = (tabName) => {
+  const openTab = (tabName) => { 
     setActiveTab(tabName);
   };
 

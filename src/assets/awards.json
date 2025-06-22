@@ -1,0 +1,32 @@
+{ "achievements": [
+    {
+      "title": "Certified Hyperledger Fabric Developer",
+      "org": "Kerala Blockchain Academy",
+      "type": "Certification",
+      "description": "This course by Kerala Blockchain Academy covers Hyperledger Fabric (v2.3) architecture, Chaincode development, and Fabric Node SDK, culminating in a mini project.",
+      "date": "Feb 2024"
+    },
+    {
+      "title": "Ethereum Fundamentals",
+      "org": "Kerala Blockchain Academy",
+      "type": "Certification",
+      "description": "This free course introduces Ethereum dApp development, covering smart contracts, Solidity, and blockchain fundamentals.",
+      "date": "Nov 2024"
+    },
+    {
+      "title": "Certified Blockchain Associate",
+      "org": "Kerala Blockchain Academy",
+      "type": "Certification",
+      "description": "The Certified Blockchain Associate (CBA) by Kerala Blockchain Academy, in collaboration with MLG Blockchain, Canada, is a beginner-friendly course covering blockchain fundamentals and serving as a prerequisite for advanced developer programs",
+      "date": "Nov 2024"
+    },
+    {
+      "title": "Blockchain Foundation Program",
+      "org": "Kerala Blockchain Academy",
+      "type": "Certification",
+      "description": "The Blockchain Foundation Program provides a comprehensive introduction to blockchain technology, covering decentralization, peer-to-peer networking, smart contracts, and industry applications.",
+      "date": "Jun 2024"
+    }
+    ]
+}
+   

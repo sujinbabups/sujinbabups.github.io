@@ -1,0 +1,32 @@
+.waviy {
+  position: relative;
+}
+
+.waviy span {
+  position: relative;
+  display: inline-block;
+  font-size: 30px;
+  animation: flip 3s infinite, colorChange 2s infinite;
+  animation-delay: calc(.3s * var(--i));
+}
+
+/* Flip Animation */
+@keyframes flip {
+  0%, 80% {
+    transform: rotateY(360deg);
+  }
+}
+
+/* Color Change Animation */
+@keyframes colorChange {
+  0% { color: #ec4899; }    /* pink-500 */
+  25% { color: #f472b6; }   /* pink-400 */
+  50% { color: #fb7185; }   /* rose-400 */
+  75% { color: #f9a8d4; }   /* pink-300 */
+  100% { color: #ec4899; }  /* back to pink-500 */
+}
+
+.waviy .space {
+  display: inline-block;
+  width: 10px;
+}

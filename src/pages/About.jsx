@@ -71,7 +71,7 @@ I am a passionate blockchain developer with hands-on experience in Hyperledger F
   {activeTab === 'skills' && (
     <div id="skills" className="tab-content">
       <ul className="grid grid-cols-2 gap-4">
-        {['Solidity', 'Ethereum', 'Hyperledger', 'MERN Stack', 'Javascript', 'Docker', 'Tailwind CSS', 'Github'].map((skill) => (
+        {['Node.js', 'PostgreSQL', 'Ethereum', 'Solidity','Hyperledger fabric', 'React','Docker', 'Tailwind CSS', ].map((skill) => (
           <li 
             key={skill} 
             className="bg-pink-500/10 hover:bg-pink-500/20 text-pink-300 shadow rounded-md p-3 text-center font-semibold transition-colors"
